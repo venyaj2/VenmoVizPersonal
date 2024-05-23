@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload CSV Files</h2>
+        <p>Optionally, you may anonymize your data by replacing names in your csv files with aliases.</p> 
+        <p>Please ensure that every alias matches with one name.</p> 
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="csvFiles">Select CSV Files:</label>
+            <input type="file" id="csvFiles" name="csvFiles" accept=".csv" multiple required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <script src="../src/upload.js"></script>
+</body>
+</html>

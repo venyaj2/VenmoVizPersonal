@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to VenmoViz!</h2>
+        <form id="loginForm">
+            <!-- <label for="username">Username:</label> -->
+            <input type="text" id="username" name="username" required placeholder="Username...">
+            <!-- <label for="password">Password:</label> -->
+            <input type="password" id="password" name="password" required placeholder="Password...">
+
+            <div class="terms-container">
+                <input type="checkbox" id="termsCheckbox" required >
+                <label for="termsCheckbox">I agree to the <span class="underline">Terms and Conditions</span></label>
+            </div>
+            
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="terms-text">
+                            <p><strong>Acceptance of Terms:</strong> By accessing or using VenmoViz, you agree to abide by these Terms and Conditions.</p>
+                            <p><strong>Data Usage:</strong> VenmoViz retrieves and analyzes your Venmo transaction data to provide insights into your spending habits. By using VenmoViz, you consent to the collection, processing, and analysis of your transaction data. </p>
+                            <p><strong>Privacy:</strong> Your privacy is important to us. We adhere to strict privacy policies and take measures to secure your data. We do not sell or share your personal information with third parties without your consent. </p>
+                            <p><strong>Anonymization:</strong> We anonymize and aggregate your transaction data to protect your identity and privacy. We do not store or display personally identifiable information in the visualization. </p>
+                            <p><strong>Security:</strong> We employ industry-standard security measures to safeguard your data against unauthorized access, breaches, or cyberattacks. However, no system is completely immune to security risks, and we cannot guarantee the absolute security of your data. </p>
+                            <p><strong>Usage Restrictions:</strong> You may use VenmoViz solely for personal, non-commercial purposes. You may not modify, reproduce, distribute, or exploit VenmoViz for any commercial gain or unauthorized purposes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" id="loginButton" disabled>Login</button>
+        </form>
+    </div>
+    <script src="../src/login.js"></script>
+</body>
+</html>

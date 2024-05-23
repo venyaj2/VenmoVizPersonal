@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Visualization Page</title>
+   <link rel="stylesheet" href="../style/viz.css">
+</head>
+<body>
+   <script src="https://d3js.org/d3.v6.min.js"></script>
+   <script src="../src/viz.js"></script>
+   <div class="viz-container">
+      <p></p>
+      <h2 class="horiz-flex-center">Venmo Viz</h2>
+      <!-- <select id="dropdown"></select>
+      <select id="categoryDropdown"></select> -->
+      <label for="dropdown">Friend:</label>
+      <select id="dropdown"></select>
+      <label for="categoryDropdown">Category:</label>
+      <select id="categoryDropdown"></select>
+      <div style="position: relative"> 
+         <div style="opacity: 0;" class="tooltip">My tooltip!</div>
+         <svg width="3000" height="2500"></svg>
+      </div>
+  </div>
+</body>
+</html>
+

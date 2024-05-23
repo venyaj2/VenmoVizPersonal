@@ -1,0 +1,117 @@
+:root {
+    --venmoBlue: #398EFF;
+    --lightBlue: #6EB5FF;
+    --white: #ffffff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--venmoBlue); 
+}
+
+.login-container, .upload-container {
+    text-align: center;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-container h2, .upload-container h2 {
+    color: var(--lightBlue); 
+    text-align: center; 
+}
+
+.terms-container {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+  
+.modal {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid var(--venmoBlue);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 600px; 
+    height: 350px; 
+    overflow-y: auto; 
+}
+
+.modal-content {
+    color: var(--venmoBlue);
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+label[for="termsCheckbox"] .underline {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--venmoBlue);
+}
+
+.terms-container input[type="checkbox"] {
+    width: 20px;
+    height: 12px; 
+}
+
+.terms-container:hover .modal {
+    position: absolute;
+    display: inline-block;
+    bottom: -120%;
+    right: 0;
+}
+  
+#terms-text {
+    margin-top: 10px; 
+    max-width: 600px; 
+    word-wrap: break-word; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+form input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 8px 20px;
+}
+
+.dropdown-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; 
+}

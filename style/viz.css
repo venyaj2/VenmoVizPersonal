@@ -1,0 +1,66 @@
+:root {
+    --venmoBlue: #398EFF;
+    --lightBlue: #6EB5FF;
+    --white: #ffffff;
+ }
+ 
+ 
+ /* Apply a global font */
+ body {
+    background-color: var(--venmoBlue);
+ }
+ 
+ .viz-container {
+   text-align: center;
+   background-color: white; 
+   margin-left: 120px;
+   margin-right: 120px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   padding: 20px;
+   border-radius: 8px; 
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+ 
+ .horiz-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+ .horiz-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+.viz-container h2 {
+   color: var(--lightBlue); 
+   text-align: center; 
+   font-size: 40px;
+}
+ 
+label[for="dropdown"] {
+   margin-left: 850px; 
+}
+
+label[for="categoryDropdown"] {
+   margin-left: 20px; 
+}
+
+ svg {
+    display: block;
+    margin: 0 auto;
+ }
+ 
+ .tooltip {
+   position: absolute;
+   display: inline-block;
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid lightgrey;
+   font-size: small;
+   padding: 5px;
+}
